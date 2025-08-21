@@ -1,0 +1,28 @@
+<nav class="bg-blue-600 text-white p-4 flex justify-between items-center">
+  <div class="text-2xl font-bold">MyApp</div>
+  <ul class="hidden md:flex space-x-6">
+    <li><a href="/" class="hover:text-gray-200">Home</a></li>
+    <li><a href="/patients" class="hover:text-gray-200">Patients</a></li>
+    <li><a href="/doctors" class="hover:text-gray-200">Doctors</a></li>
+    <li><a href="/appointments" class="hover:text-gray-200">Appointments</a></li>
+    <li><a href="/reports" class="hover:text-gray-200">Reports</a></li>
+  </ul>
+  <div class="md:hidden">
+    <button (click)="toggleMenu()" class="focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path *ngIf="!menuOpen" d="M4 6h16M4 12h16M4 18h16"></path>
+        <path *ngIf="menuOpen" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <ul *ngIf="menuOpen" class="flex flex-col mt-4 space-y-2 md:hidden bg-blue-500 p-4 rounded">
+    <li><a href="/" class="hover:text-gray-200">Home</a></li>
+    <li><a href="/patients" class="hover:text-gray-200">Patients</a></li>
+    <li><a href="/doctors" class="hover:text-gray-200">Doctors</a></li>
+    <li><a href="/appointments" class="hover:text-gray-200">Appointments</a></li>
+    <li><a href="/reports" class="hover:text-gray-200">Reports</a></li>
+  </ul>
+</nav>
