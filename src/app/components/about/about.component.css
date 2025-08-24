@@ -1,0 +1,6 @@
+.box {
+  height: 100vh;
+  text-align: center;
+  padding: 40px;
+  transition: background-color 0.5s ease; /* smooth animation */
+}

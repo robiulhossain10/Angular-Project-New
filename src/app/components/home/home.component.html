@@ -1,0 +1,12 @@
+<h1 class="text-2xl">{{title}}</h1>
+{{name}} <br>
+{{age}} <br>
+{{location}} <br>
+
+<img [src]="imgUrl" width="400px" height="400px" class="object-fit-cover" />
+
+<button class="bg-cyan-600 w-[200px] h-[50px] rounded-xl" [disabled]="isDisabled">Click Me</button>
+
+<button class="bg-cyan-600 w-[200px] h-[50px] rounded-xl" (click)="onClick()">Click Me</button>
+<h1>{{messege}}</h1>
+<app-footer></app-footer>
