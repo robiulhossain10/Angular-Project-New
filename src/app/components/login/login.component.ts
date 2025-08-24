@@ -17,7 +17,8 @@ export class LoginComponent {
     country: '',
     bio: '',
     rating: 5,
-    file: null
+    file: null,
+    checkbox: null
   };
 
   countries: string[] = ["Bangladesh", "India", "USA", "UK", "Canada"];

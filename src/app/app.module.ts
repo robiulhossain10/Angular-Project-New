@@ -9,7 +9,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { LoginComponent } from './components/login/login.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormComponent } from './components/form/form.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MongouserComponent } from './components/mongouser/mongouser.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +22,16 @@ import { FormsModule } from '@angular/forms';
     DashboardComponent,
     HomeComponent,
     AboutComponent,
-    LoginComponent
+    LoginComponent,
+    FormComponent,
+    MongouserComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
