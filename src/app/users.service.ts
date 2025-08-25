@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class UsersService {
-  private apiUrl = 'https://backend-api-vhdg.onrender.com/api/users'; // তোমার Node backend এর URL
+  private apiUrl = 'https://backend-api-vhdg.onrender.com/api/users'; 
 
   constructor(private http: HttpClient) {}
 

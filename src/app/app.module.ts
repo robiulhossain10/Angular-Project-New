@@ -13,6 +13,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormComponent } from './components/form/form.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MongouserComponent } from './components/mongouser/mongouser.component';
+import { StudentFormComponent } from './components/student-form/student-form.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { MongouserComponent } from './components/mongouser/mongouser.component';
     AboutComponent,
     LoginComponent,
     FormComponent,
-    MongouserComponent
+    MongouserComponent,
+    StudentFormComponent
   ],
   imports: [
     BrowserModule,
