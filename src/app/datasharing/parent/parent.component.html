@@ -1,0 +1,20 @@
+<div class="p-6 bg-white rounded-2xl shadow space-y-4">
+  <h2 class="text-lg font-bold text-slate-800">👨 Parent Component</h2>
+
+  <!-- Input for child -->
+  <label class="block">
+    <span class="text-sm text-slate-600">Message for Child</span>
+    <input [(ngModel)]="parentMessage"
+      class="w-full mt-1 px-3 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-indigo-500"
+      placeholder="Type something for child..." />
+  </label>
+
+  <!-- Render Child -->
+  <app-child [messageFromParent]="parentMessage" (responseToParent)="handleChildResponse($event)">
+  </app-child>
+
+  <!-- Child Response -->
+  <div class="p-3 rounded-lg bg-slate-50 border text-slate-700">
+    <strong>Child says:</strong> {{ childResponse || 'No response yet' }}
+  </div>
+</div>

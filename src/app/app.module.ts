@@ -14,6 +14,10 @@ import { FormComponent } from './components/form/form.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MongouserComponent } from './components/mongouser/mongouser.component';
 import { StudentFormComponent } from './components/student-form/student-form.component';
+import { ParentComponent } from './datasharing/parent/parent.component';
+import { ChildComponent } from './datasharing/child/child.component';
+import { SiblingsAComponent } from './datasharing/siblings-a/siblings-a.component';
+import { SiblingsBComponent } from './datasharing/siblings-b/siblings-b.component';
 
 @NgModule({
   declarations: [
@@ -26,16 +30,20 @@ import { StudentFormComponent } from './components/student-form/student-form.com
     LoginComponent,
     FormComponent,
     MongouserComponent,
-    StudentFormComponent
+    StudentFormComponent,
+    ParentComponent,
+    ChildComponent,
+    SiblingsAComponent,
+    SiblingsBComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
